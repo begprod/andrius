@@ -1,8 +1,11 @@
 var Animation = (function() {
 	var borderedEl = $('.js-anim-border');
 	var logoEl = $('.js-anim-logo');
-	var borderedElActiveClass = 'l-main__content--is-active';
-	var logoElActiveClass = 'b-logo--is-active';
+	var menuTrigger = $('.js-menu-trigger')
+	var borderedPageReadyClass = 'l-main__content--is-ready';
+	var logoPageReadyClass = 'b-logo--is-ready';
+	var menuActiveClass = 'menu-trigger--is-active';
+	var menuPageReadyClass = 'menu-trigger--is-ready';
 
 	return {
 		init: function() {
@@ -16,8 +19,15 @@ var Animation = (function() {
 		},
 		event: function() {
 			$(document).ready(function() {
-				borderedEl.addClass(borderedElActiveClass);
-				logoEl.addClass(logoElActiveClass);
+				borderedEl.addClass(borderedPageReadyClass);
+				logoEl.addClass(logoPageReadyClass);
+				setTimeout(function() {
+					menuTrigger.addClass(menuPageReadyClass);
+				}, 4500);
+			});
+
+			menuTrigger.click(function() {
+				$(this).toggleClass(menuActiveClass);
 			});
 		}
 	}

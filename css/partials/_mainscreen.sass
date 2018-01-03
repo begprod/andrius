@@ -6,7 +6,6 @@
 	background-repeat: no-repeat
 	background-color: black
 	animation: bg 100s 4s linear infinite
-
 	&::after
 		content: ""
 		position: absolute
@@ -19,7 +18,7 @@
 		height: 100vh
 		background-color: black
 		z-index: 1
-		opacity: .5
+		opacity: .3
 
 	&__content
 		position: relative
@@ -30,7 +29,6 @@
 		align-items: center
 		height: 100%
 		z-index: 100
-
 		&::before
 			content: ""
 			position: absolute
@@ -40,7 +38,7 @@
 			left: 0
 			border: 10px solid transparent
 		
-		&--is-active
+		&--is-ready
 			&::before
 				border-top-color: white
 				border-right-color: white
@@ -61,9 +59,11 @@
 
 .b-logo
 	text-align: center
+	text-transform: uppercase
+	font-weight: bolder
 	color: white
 
-	&--is-active
+	&--is-ready
 		.b-logo__head
 			opacity: 1
 			transition: all .5s 3s linear
@@ -84,4 +84,5 @@
 		top: -30px
 		opacity: 0
 		margin: 0
+		text-transform: capitalize
 		font-size: 20px
