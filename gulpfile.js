@@ -25,13 +25,13 @@ const path = {
 	src: { // From
 		html: './html/*.html',
 		css: './css/style.sass',
-		js: './js/partials/*.js',
+		js: './js/script.js',
 		img: './images/**/*.*'
 	},
 	watch: { // Watching for changes
 		html: './html/**/*.html',
 		css: './css/**/*.sass',
-		js: './js/partials/*.js',
+		js: './js/**/*.js',
 		img: './images/**/*.*'
 	}
 }
@@ -75,6 +75,7 @@ gulp.task('MakeCssGreatAgain', () => {
 
 gulp.task('MakeJsGreatAgain', () => {
 	gulp.src(path.src.js)
+		.pipe(rigger())
 		.pipe(plumber())
 		.pipe(uglify())
 		.pipe(gulp.dest(path.build.js))
