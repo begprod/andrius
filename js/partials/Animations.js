@@ -4,8 +4,8 @@ var Animation = (function() {
 	var menuTrigger = $('.js-menu-trigger')
 	var borderedPageReadyClass = 'l-main__content--is-ready';
 	var logoPageReadyClass = 'b-logo--is-ready';
-	var menuActiveClass = 'menu-trigger--is-active';
-	var menuPageReadyClass = 'menu-trigger--is-ready';
+	var menuActiveClass = 'b-menu-trigger--is-active';
+	var menuPageReadyClass = 'b-menu-trigger--is-ready';
 
 	return {
 		init: function() {

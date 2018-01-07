@@ -6,11 +6,13 @@ var App = (function() {
 	return {
 		init: function() {
 			Animation.init();
+			Popup.init();
 		}
 	}
 })();
 
 //= partials/Animations.js
+//= partials/Popup.js
 
 //И инициализируем наш глобальный модуль
 App.init();
