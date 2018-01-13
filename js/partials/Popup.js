@@ -17,15 +17,16 @@ var Popup = (function() {
 					$.magnificPopup.close();
 				} else {
 					$.magnificPopup.open({
-					items: {
-						src: $('#popup-content').html(),
-						type: 'inline'
-					},
-					closeOnBgClick: false,
-					closeBtnInside: false,
-					showCloseBtn: false,
-					alignTop: true
-				});
+						items: {
+							src: $('#popup-content').html(),
+							type: 'inline'
+						},
+						closeOnBgClick: false,
+						closeBtnInside: false,
+						showCloseBtn: false,
+						alignTop: true,
+						mainClass: 'mfp-open-anim'
+					});
 				}
 
 				$(this).toggleClass('popup-on');
