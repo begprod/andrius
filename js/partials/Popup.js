@@ -17,6 +17,7 @@ var Popup = (function() {
 					$.magnificPopup.close();
 				} else {
 					$.magnificPopup.open({
+						focus: '#y_name',
 						items: {
 							src: $('#popup-content').html(),
 							type: 'inline'

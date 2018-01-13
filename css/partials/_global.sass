@@ -12,11 +12,18 @@ body
 *::before
 	box-sizing: inherit
 
+input, textarea
+	font-family: $textFont
+	border: none
+	outline: none
+
 button
 	padding: 0
 	border: none
 	border-radius: 0
 	background-color: transparent
+	font-family: $textFont
+	cursor: pointer
 
 p
 	line-height: 28px
@@ -45,3 +52,12 @@ p
 .wrapper
 	width: 1000px
 	margin: 0 auto
+
+.btn
+	display: inline-block
+	&--sm
+		width: 150px
+	&--md
+		width: 250px
+	&--lg
+		width: 350px
