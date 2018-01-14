@@ -5,7 +5,7 @@
 	background-size: cover
 	background-repeat: no-repeat
 	background-color: black
-	animation: bg 100s 4s linear infinite
+	animation: bg 65s 4s linear infinite
 	&::after
 		content: ""
 		position: absolute
@@ -48,12 +48,14 @@
 				border-top-color .5s linear 1.5s,
 				border-right-color .5s linear 2s,
 				border-bottom-color .5s linear 2.5s
+				@media screen and (max-width: $small)
+					display: none
 
 @keyframes bg
 	0%
 		background-position: 0 0
 	50%
-		background-position: -1000px 0
+		background-position: -600px 0
 	100%
 		background-position: 0 0
 
@@ -67,10 +69,14 @@
 		.b-logo__head
 			opacity: 1
 			transition: all .5s 3s linear
+			@media screen and (max-width: $small)
+				transition-delay: 1s
 		.b-logo__sub-head
 			top: 0
 			opacity: 1
 			transition: all .5s 3.7s linear
+			@media screen and (max-width: $small)
+				transition-delay: 1.7s
 
 	&__head
 		opacity: 0
@@ -78,6 +84,10 @@
 		font-family: $logoFont
 		font-size: 100px
 		overflow: hidden
+		@media screen and (max-width: $medium)
+			font-size: 60px
+		@media screen and (max-width: $small)
+			font-size: 45px
 
 	&__sub-head
 		position: relative
@@ -86,3 +96,5 @@
 		margin: 0
 		text-transform: capitalize
 		font-size: 20px
+		@media screen and (max-width: $small)
+			font-size: 15px

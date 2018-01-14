@@ -1,3 +1,4 @@
+// ¯\_(ツ)_/¯
 .b-menu
 	&__inner
 	&__item
@@ -11,6 +12,8 @@
 	height: 45px
 	z-index: 100
 	cursor: pointer
+	@media screen and (max-width: $medium)
+		right: 15px
 	&:focus
 		outline: none
 	&::before
@@ -48,10 +51,14 @@
 			top: 18px
 			transform: rotate(45deg)
 			transition-delay: 0s
+			@media screen and (max-width: $small)
+				background-color: lightgray
 		&::after
 			top: 18px
 			transform: rotate(-45deg)
 			transition-delay: 0s
+			@media screen and (max-width: $small)
+				background-color: lightgray
 
 	&--is-ready
 		&::before
