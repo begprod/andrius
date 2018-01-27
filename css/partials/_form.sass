@@ -2,6 +2,8 @@
 	width: 500px
 	margin: 0 auto
 	padding: 25px 0
+	@media screen and (max-width: $medium)
+		width: 100%
 
 	&__block
 		position: relative
@@ -20,6 +22,9 @@
 		text-align: center
 		&-text
 			margin-top: -25px
+			&--long
+				@media screen and (max-width: $medium)
+					margin-top: -60px
 		&::before
 			content: ''
 			position: absolute
