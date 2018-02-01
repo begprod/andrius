@@ -17,10 +17,10 @@ const reload = browserSync.reload;
 //Project paths
 const path = {
 	build: { // Where
-		html: './build',
-		css: './build/css',
-		js: './build/js',
-		img: './build/images'
+		html: './docs',
+		css: './docs/css',
+		js: './docs/js',
+		img: './docs/images'
 	},
 	src: { // From
 		html: './html/*.html',
@@ -39,7 +39,7 @@ const path = {
 
 const serverConfig = {
 	server: {
-		baseDir: "./build"
+		baseDir: "./docs"
 	},
 	tunnel: true,
 	host: 'localhost',
