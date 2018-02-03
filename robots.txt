@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /css/
+Disallow: /html/
+Disallow: /js/
+Disallow: *.json
+Disallow: *.md
+Disallow: *.txt
