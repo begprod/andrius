@@ -3,14 +3,31 @@
 	margin: 0 auto
 	padding: 50px
 	background-color: white
+
 	&__email
 		font-size: 66px
+		@media screen and (max-width: $large)
+			font-size: 46px
+		@media screen and (max-width: $medium)
+			font-size: 24px
+		@media screen and (max-width: $small)
+			font-size: 18px
 
-.mfp-open-anim
-	animation: popup .5s ease-in-out
+	@media screen and (max-width: $small)
+		width: 100%
 
 @keyframes popup
 	0%
 		opacity: 0
 	100%
 		opacity: 0.8
+
+//Magnific popup classes
+.mfp-open-anim
+	animation: popup .5s ease-in-out
+
+.mfp-container
+	@media screen and (max-width: $small)
+		padding: 0
+
+
