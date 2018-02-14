@@ -60,10 +60,39 @@ p
 		width: 300px
 
 .btn
+	position: relative
 	display: inline-block
+	vertical-align: top
+	margin: 15px auto
+	color: white
+	text-decoration: none
+	border: 4px solid white
+	overflow: hidden
+	transition: all .5s ease-in-out
 	&--sm
-		width: 150px
+		padding: 5px 10px
 	&--md
-		width: 250px
+		padding: 10px 15px
 	&--lg
-		width: 350px
+		padding: 15px 20px
+	&:hover, &:focus
+		color: white
+		outline: none
+		&::before
+			opacity: 1
+			left: 0
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: -100%
+		width: 100%
+		height: 100%
+		opacity: 0
+		background: #bc4e9c
+		background: linear-gradient(to right, #f80759, #bc4e9c)
+		transition: all .5s ease-in-out
+
+	&__text
+		position: relative
+		z-index: 10
