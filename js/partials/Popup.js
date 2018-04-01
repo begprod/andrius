@@ -21,6 +21,7 @@ var Popup = (function() {
 							src: $('#popup-content').html(),
 							type: 'inline'
 						},
+						enableEscapeKey: false,
 						closeOnBgClick: false,
 						closeBtnInside: false,
 						showCloseBtn: false,
