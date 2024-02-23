@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com:begprod/andrius#readme",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-csso": "^3.0.0",
